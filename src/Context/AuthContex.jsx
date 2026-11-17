@@ -4,7 +4,7 @@ import { useState, useContext, createContext } from "react";
 const AuthContext = createContext();
 
 //access to the provider
-export function AuthProvider({ children }) {
+export default function AuthProvider({ children }) {
 
     //make sure logged in
     const [Auth, setAuth] = useState(false);
