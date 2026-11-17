@@ -2,7 +2,7 @@ import BlogPost from "./Pages/BlogPost";
 import Blog from "./Pages/Blog";
 import NavBar from "./Components/Navbar";
 
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 export default function App() {
 
@@ -12,15 +12,15 @@ export default function App() {
       <BlogPost />
       <Blog />
       <NavBar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<NavBar />} />
+          <Route path="/" element={<Blog />} />
+          <Route path="/" element={<BlogPost />} />
 
-      <Routes>
-        <Route path="/" element= {<NavBar />} />
-        <Route path="/" element= {<Blog />} />
-        <Route path="/" element= {<BlogPost />} />      
-
-      </Routes>
-
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 
 }
