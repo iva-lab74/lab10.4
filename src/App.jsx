@@ -9,9 +9,8 @@ export default function App() {
 
   return (
     <div>
-
-
       <BrowserRouter>
+      <NavBar />
         <Routes>
           <Route path="/" element={<NavBar />} />
           <Route path="/blog" element={<Blog />} />
