@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom"
-import posts from "../lib/posts"
+import { useParams } from "react-router-dom";
+import posts from "../lib/posts";
 
 
 //just the post

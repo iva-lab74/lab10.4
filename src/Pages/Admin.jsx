@@ -1,4 +1,4 @@
-import { useAuth } from "../Context/AuthContex";
+import { useAuth } from "../Context/AuthContext";
 import { Navigate } from "react-router-dom";
 
 //admin

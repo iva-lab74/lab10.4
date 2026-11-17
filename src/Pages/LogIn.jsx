@@ -1,4 +1,4 @@
-import { useAuth } from "../Context/AuthContex";
+import { useAuth } from "../Context/AuthContext";
 
 //sends user elsewhere after login
 import { useNavigate } from "react-router-dom";
