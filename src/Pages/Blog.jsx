@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import posts from "../lib/posts";
 
-
+//list of posts
 export default function Blog() {
 
 
