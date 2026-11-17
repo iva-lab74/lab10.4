@@ -9,14 +9,12 @@ export default function App() {
   return (
     <div>
 
-      <BlogPost />
-      <Blog />
-      <NavBar />
+     
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<NavBar />} />
-          <Route path="/" element={<Blog />} />
-          <Route path="/" element={<BlogPost />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
 
         </Routes>
       </BrowserRouter>
